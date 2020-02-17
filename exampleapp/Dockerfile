@@ -1,7 +1,7 @@
 FROM alpine:3.7
 MAINTAINER Anubhav Mishra <mishra@hashicorp.com>
 
-ENV VAULT_VERSION=1.1.3
+ENV VAULT_VERSION=1.3.2
 
 RUN apk add --no-cache ca-certificates gnupg curl git unzip bash openssh libcap openssl
 

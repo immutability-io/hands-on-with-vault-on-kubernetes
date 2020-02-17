@@ -26,11 +26,13 @@ spec:
             secretName: vault-tls
       securityContext:
         runAsGroup: 1000
+        runAsUser: 1000
 
       initContainers:
       - name: vault-authenticator
         securityContext:
           runAsGroup: 1000
+          runAsUser: 1000
         image: sethvargo/vault-kubernetes-authenticator:0.2.0
         imagePullPolicy: IfNotPresent
         volumeMounts:

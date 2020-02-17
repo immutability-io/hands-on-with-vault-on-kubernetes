@@ -53,3 +53,10 @@ gcloud container clusters get-credentials $(cluster-name) --region "$(google-reg
 
 kubectl cluster-info
 
+# this is necessary because cloudshell uses an old helm version
+
+helm init
+
+kubectl rollout status deployment/tiller-deploy -n kube-system
+
+kubectl apply -f kubernetes/tiller-rbac.yaml
