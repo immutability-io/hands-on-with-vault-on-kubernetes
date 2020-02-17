@@ -1,5 +1,11 @@
+0-settings:
+	bash scripts/00-settings.sh
+
 0-install-vault:
 	bash scripts/00-install-vault.sh
+
+0-tiller:
+	bash scripts/00-tiller.sh
 
 0-build-cluster:
 	bash scripts/00-build-cluster.sh

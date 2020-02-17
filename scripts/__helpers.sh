@@ -44,7 +44,7 @@ gke-latest-master-version() {
 # variable must be changed before running any commands.
 google-region() {
   (
-    echo "us-west1"
+    echo "us-east4"
   )
 }
 
